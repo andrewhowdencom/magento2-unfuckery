@@ -1,0 +1,59 @@
+{
+    "name": "andrewhowdencom/magento2-unfuckery",
+    "description": "A stupid joke project to replace packages I do not like with nothing",
+    "type": "magento2-module",
+    "homepage": "https://github.com/andrewhowdencom/magento2-unfuckery",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrew Howden",
+            "email": "hello@andrewhowden.com",
+            "homepage": "https://www.andrewhowden.com/",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "hello@andrewhowden.com",
+        "issues": "https://github.com/andrewhowdencom/magento2-unfuckery/issues",
+        "wiki": "https://github.com/andrewhowdencom/magento2-unfuckery/wiki",
+        "source": "https://github.com/andrewhowdencom/magento2-unfuckery"
+    }, 
+    "require": {
+        "php": ">=7.0"
+    },
+    "replace": {
+        "amzn/amazon-pay-and-login-magento-2-module": "*",
+        "amzn/amazon-pay-sdk-php": "*",
+        "dotmailer/dotmailer-magento2-extension": "*",
+        "klarna/module-core": "*",
+        "klarna/module-kp": "*",
+        "klarna/module-ordermanagement": "*",
+        "temando/module-shipping-m2": "*",
+        "shopialfb/facebook-module": "*",
+        "vertex/module-tax": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "andrewhowdencom\\": "src/"
+        }
+    },
+    "bin": [
+    ],
+    "archive": {
+        "exclude": [
+            "test",
+            "hack",
+            "hooks",
+            ".arclint"
+        ]
+    },
+    "config": {
+        "bin-dir":             "bin",
+        "store-auths":         false,
+        "optimize-autoloader": true,
+        "sort-packages":       true,
+        "apcu-autoloader":     true,
+        "notify-on-install":   false
+    },
+    "minimum-stability": "stable"
+}
